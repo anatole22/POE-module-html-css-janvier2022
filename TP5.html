@@ -1,34 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="pictures/Salesforce.com_logo.svg.png" />
+    <title>CRM</title>
+  </head>
+  <body>
 <form method="post" name="subscibe-form">
-  <label>Nom</label>
-  <input type="text" />
-  <label>Prénom</label>
-  <input type="text" />
-  <label>date de naissance</label>
-  <input type="date" />
-  <label>Lieu de naissance</label>
-  <input type="text" />
-  <label>civilité</label>
-  <select name="" id="">
-    <option>Mme</option>
-    <option>Mr</option>
-  </select>
-  <label>Moyenne obtenue au bac</label>
-  <input type="number" />
-  <label for="">Formation</label>
-  <select>
-    <option>bac</option>
-    <option>bts</option>
-    <option>licence</option>
-    <option>master</option>
-    <option>dut</option>
-  </select>
-  <label>si autrez précisé</label>
-  <input type="text" />
-  <label>adresse mail</label>
-  <input type="text" />
-  <label>Numéros de téléphone</label>
-  <input type="number" />
-  <label>lettre de formation</label>
-  <textarea cols="30" rows="10"></textarea>
-  <button>Envoyé</button>
+  <div>
+    <label for="nom">Nom :</label>
+    <input id="nom" type="text" placeholder="Anatole" />
+    <label for="prénom">Prénom :</label>
+    <input id="prénom" type="text" placeholder="Viaud" />
+  </div>
+  <div>
+    <label for="naissance">Date de naissance :</label>
+    <input id="naissance" type="date" />
+  </div>
+  <div>
+    <label for="pays">Lieu de naissance :</label>
+    <select id="pays">
+          <option>-- Veuillez choisir un pays --</option>
+          <option>France</option>
+          <option>Espagne</option>
+          <option>Italie</option>
+        </select>
+  </div>
+  <div>
+    <label for="genre">Genre :</label>
+    <input type="radio" name="genre">M</>
+    <input type="radio" name="genre">F</>
+  </div>
+  <div>
+    <label for="moyenne">Moyenne obtenue au bac :</label>
+    <input id="moyenne" type="number" placeholder="15" />
+    <label for="formation">Formation</label>
+    <select id="formation">
+      <option>-- Veuillez choisir votre formation --</option>
+      <option>BAC ES</option>
+      <option>BAC S</option>
+      <option>BAC L</option>
+      <option>BAC pro</option>
+      <option>BAC techno</option>
+    </select>
+  </div>
+  <div>
+    <label for="autre">Si autre précisé :</label>
+    <input id="autre" type="text" />
+  </div>
+  <div>
+    <label for="email">Adresse mail :</label>
+    <input id="email" type="email" placeholder="bonjour@gmail.com"/>
+    <label for="phone">Numéros de téléphone :</label>
+    <input id="phone" type="number" placeholder="0601020304"/>
+  </div>
+  <div>
+    <label for="lettre">Lettre de formation :</label>
+    <textarea id="lettre" cols="30" rows="10" placeholder="Votre lettre de motivation"></textarea>
+  </div>
+  <input type="submit" value="envoyé">
 </form>
+</body>
+</html>
