@@ -1,0 +1,188 @@
+/*reset css*/
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+td,
+th {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/*NAV BAR*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: #ff5b6b;
+}
+ul {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+a {
+  color: #fed94c;
+  font-size: 2rem;
+}
+a:hover {
+  border-bottom: 5px solid #fed94c;
+}
+.div1 {
+  width: 60%;
+}
+.div2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Liste de contacts*/
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+table {
+  margin-top: 50px;
+  width: 100%;
+}
+caption {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: start;
+}
+.tr-darkblue {
+  background-color: #001f33;
+}
+.tr-lightgray {
+  background-color: lightgray;
+}
+th {
+  color: white;
+}
+td {
+  padding: 10px;
+  font-weight: 500;
+}
+.colone_spacing30 {
+  width: 30%;
+}
+.colone_spacing25 {
+  width: 25%;
+}
+.colone_spacing15 {
+  width: 15%;
+}
+.colone_spacing7 {
+  width: 7.5%;
+}
+.button-red {
+  background-color: #ff5b6b;
+  color: white;
+  width: 50%;
+  height: 30px;
+  border: 0;
+  font-size: 1.1rem;
+}
+.button-blue {
+  background-color: #007ccc;
+  color: white;
+  width: 50%;
+  height: 30px;
+  border: 0;
+  font-size: 1.1rem;
+}
+/*Nouveau contact*/
+h1 {
+  font-size: 1.7rem;
+  margin: 25px 0 40px 0;
+  font-weight: 500;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.input-text {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  border-bottom: 1px solid black;
+  width: 400px;
+}
+.input-button {
+  width: 150px;
+  height: 35px;
+  margin-top: 35px;
+  border: 0;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+}
