@@ -1,0 +1,148 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px;
+}
+/* Nav */
+header {
+  border: 2px solid black;
+}
+nav {
+  height: 104px;
+}
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  margin: 0;
+  padding-top: 10px;
+  padding-inline-start: 0;
+  justify-items: center;
+}
+li {
+  border: 2px solid black;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li1 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.li2 {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.li3 {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+.li4 {
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+/* Nav mobile */
+@media screen and (max-width: 768px) {
+  nav {
+    height: 276px;
+  }
+  ul {
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 20px;
+  }
+  li {
+    height: 45px;
+    width: 95%;
+  }
+  .li1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  .li2 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  .li3 {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+  .li4 {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+}
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.section1 {
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 0;
+  grid-column: 1/11;
+  grid-row: 1/1;
+}
+.section2 {
+  height: 624px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/8;
+  grid-row: 2/7;
+}
+.section3 {
+  height: 400px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 8/11;
+  grid-row: 2/5;
+}
+.section4 {
+  height: 200px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 8/11;
+  grid-row: 5/7;
+}
+/* Main mobile */
+@media screen and (max-width: 768px) {
+  .section1 {
+    margin: 20px 0 0 0;
+  }
+  .section2 {
+    grid-column: 1/11;
+    grid-row: 2/2;
+  }
+  .section3 {
+    grid-column: 1/11;
+    grid-row: 3/3;
+  }
+  .section4 {
+    grid-column: 1/11;
+    grid-row: 4/4;
+  }
+}
+footer {
+  height: 100px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
