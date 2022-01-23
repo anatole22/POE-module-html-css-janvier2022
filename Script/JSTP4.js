@@ -1,16 +1,14 @@
-function Submit() {
-  let sEmail = document.getElementById("saveEmail").value;
-  let sPassword = document.getElementById("savePassword").value;
-  console.log(sEmail);
-  if (sEmail == "" || sPassword == "") {
-    alert("erreur, veuillez réessayer");
-  } else {
-    alert("Enregistrement reussi");
-  }
+const sEmail = prompt("Enregister votre email :");
+const sPassword = prompt("Enregistrer votre mot de passe :");
+
+if (sEmail == "" || sPassword == "") {
+  alert("erreur, veuillez réessayer");
+  location.reload();
+} else {
+  alert("Enregistrement reussi");
 }
+
 function Login() {
-  let sEmail = document.getElementById("saveEmail").value;
-  let sPassword = document.getElementById("savePassword").value;
   let Email = document.getElementById("Email").value;
   let Password = document.getElementById("Password").value;
   if (Email == "" || Password == "") {
@@ -18,6 +16,7 @@ function Login() {
   } else {
     if (Email === sEmail && Password === sPassword) {
       alert("Bienvenu dans votre espace client!");
+      location.reload();
     } else {
       alert("Identifiants incorrect!");
     }
