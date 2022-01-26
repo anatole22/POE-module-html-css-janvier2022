@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./pictures/logo.svg" />
+    <link rel="stylesheet" href="./style/styleTP9.css" />
+    <title>JSTP23</title>
+  </head>
+  <body>
+    <form>
+      <h1>calcul des dimensions du cercle</h1>
+      <div>
+        <label for="rayon">Rayon :</label>
+        <input id="rayon" type="number" />
+      </div>
+      <div>
+        <p id="erreur"></p>
+      </div>
+      <div>
+        <label for="diametre">Diamètre :</label>
+        <input id="diametre" type="number" value="" disabled />
+      </div>
+      <div>
+        <label for="circonference">Circonférence :</label>
+        <input id="circonference" type="number" value="" disabled />
+      </div>
+      <div>
+        <label for="aire">Aire :</label>
+        <input id="aire" type="number" value="" disabled />
+      </div>
+      <div>
+        <input
+          type="button"
+          value="calculer"
+          class="button"
+          onclick="calcul()"
+        />
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript" src="./Script/JSTP23.js"></script>
+</html>
+<style>
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(88, 180, 199);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px gray;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-direction: column;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    width: 100%;
+    color: rgb(237 89 80);
+  }
+  div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+  .button {
+    background-color: rgb(249, 215, 120);
+    color: rgb(237 89 80);
+    border: 1px solid rgb(237 89 80);
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  #erreur {
+    background-color: red;
+    color: white;
+  }
+</style>
